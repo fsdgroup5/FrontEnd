@@ -25,7 +25,7 @@ export class NewhallComponent implements OnInit {
     this.hallService.Newhall(this.NewHall);
     console.log("Called");    
     alert("Success");
-    this.router.navigate(['']);
+    this.router.navigate(['Halls']);
   }
   
 

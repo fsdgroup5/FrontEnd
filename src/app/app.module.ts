@@ -10,6 +10,8 @@ import { HallComponent } from './hall/hall.component';
 import { HeaderComponent } from './header/header.component';
 import { EditHallComponent } from './edit-hall/edit-hall.component';
 import { FooterComponent } from './footer/footer.component';
+import { AdminLoginComponent } from './admin-login/admin-login.component';
+import { UserLoginComponent } from './user-login/user-login.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +21,8 @@ import { FooterComponent } from './footer/footer.component';
     HeaderComponent,
     EditHallComponent,
     FooterComponent,
+    AdminLoginComponent,
+    UserLoginComponent,
   ],
   imports: [
     BrowserModule,

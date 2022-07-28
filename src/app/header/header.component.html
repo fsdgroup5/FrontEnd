@@ -1,27 +1,31 @@
-<nav class="navbar-expand-lg navbar navbar-dark bg-dark">
-  <div class="container">
-      <a class="navbar-brand" href="#">Hall Booking</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" routerLink="">Hall Details</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" routerLink="AddHall">Add Hall</a>
-          </li>
-          <!-- <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Hall Management
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <li><a class="dropdown-item" routerLink="">Halls</a></li>
-              <li><a class="dropdown-item" routerLink="AddHall">Add Hall</a></li>
-            </ul>
-          </li> -->
-        </ul>
-      </div>
+<nav class="navbar navbar-expand-lg"id="nav">
+  <div class="container-fluid">
+      <img src="/assets/images/logo.jpg" alt="ict" width="80" height="70">
+      <h3 style="color: #F8C8C6;padding-right: 25px;padding-left: 15px;">{{title}}</h3>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0" >
+        <li class="nav-item">
+          <a class="nav-link text-white"  style="font-size: large;" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" style="font-size: large;" routerLink="/userLogin" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" >User-Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" style="font-size: large;" routerLink="/adminLogin" routerLinkActive="active" >Admin-Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" style="font-size: large;" routerLink="/Halls" routerLinkActive="active">Halls</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" style="font-size: large;" routerLink="/AddHall" routerLinkActive="active">Add Hall</a>
+        </li>
+      </ul>
+    </div>
   </div>
 </nav>
+
+
+

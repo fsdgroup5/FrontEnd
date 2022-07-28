@@ -25,7 +25,7 @@ export class EditHallComponent implements OnInit {
   {    
     this.hallService.editHall(this.Hall);   
     alert("Success");
-    this.router.navigate(['']);
+    this.router.navigate(['Halls']);
   }
 
 }
