@@ -13,9 +13,9 @@ export class AdminLoginComponent implements OnInit {
   password:''};
 
   constructor(private _auth: AuthService, private _router:Router) { }
-    loginUser()
+  loginAdmin()
   {
-    this._auth.loginUser(this.User)
+    this._auth.loginAdmin(this.User)
     .subscribe(
       res=>{
         localStorage.setItem('token',res.token)

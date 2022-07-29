@@ -1,5 +1,5 @@
 #sect1{  
-    background-image: url("/assets/images/Login1.jpg");  
+    background-image: url("/assets/images/user1.jpg");  
     background-size: 100%;  
     background-size: cover;  
 } 
@@ -22,7 +22,7 @@
   text-align: center;
   transition: transform 0.6s;
   transform-style: preserve-3d;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
 }
 
 .flip-card:hover .flip-card-inner {
@@ -38,7 +38,6 @@
 }
 
 .flip-card-front {
-  background-color: #bbb;
   color: black;
 }
 
