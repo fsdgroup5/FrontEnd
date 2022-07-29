@@ -16,8 +16,8 @@ h3 {
 
 hr {
     margin: 20px auto;
-    color: #730071;
-    border: 3px solid #730071;
+    color: #1629b4;
+    border: 3px solid #1629b4;
     max-width: 65px;
     opacity: 1;
 }
@@ -38,10 +38,6 @@ hr {
     transform: scale(0.9);
 }
 
-.btn-primary:visited {
-    background-color: #730071;
-    border-color: #730071;
-}
 
 p {
     font-size: 1rem;
