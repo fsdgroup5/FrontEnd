@@ -6,11 +6,12 @@ import { HallComponent } from './hall/hall.component';
 import { HomeComponent } from './home/home.component';
 import { NewhallComponent } from './newhall/newhall.component';
 import { UserLoginComponent } from './user-login/user-login.component';
+import { AuthGuard } from './auth.guard';
 
 const routes: Routes = [
-  {path:'AddHall',component:NewhallComponent},
-  {path:'update',component:EditHallComponent},
-  {path:'Halls',component:HallComponent},
+  {path:'AddHall',canActivate:[AuthGuard],component:NewhallComponent},
+  {path:'update',canActivate:[AuthGuard],component:EditHallComponent},
+  {path:'Halls',canActivate:[AuthGuard],component:HallComponent},
   {path:'',component:HomeComponent},
   {path:'adminLogin',component:AdminLoginComponent},
   {path:'userLogin',component:UserLoginComponent},

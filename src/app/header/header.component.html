@@ -11,16 +11,19 @@
           <a class="nav-link text-white"  style="font-size: large;" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white" style="font-size: large;" routerLink="/userLogin" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" >User-Login</a>
+          <a class="nav-link text-white" style="font-size: large;" routerLink="/userLogin" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" *ngIf="!_auth.loggedIn()" >User-Login</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white" style="font-size: large;" routerLink="/adminLogin" routerLinkActive="active" >Admin-Login</a>
+          <a class="nav-link text-white" style="font-size: large;" routerLink="/adminLogin" routerLinkActive="active" *ngIf="!_auth.loggedIn()">Admin-Login</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white" style="font-size: large;" routerLink="/Halls" routerLinkActive="active">Halls</a>
+          <a class="nav-link text-white" style="font-size: large;" routerLink="/Halls" routerLinkActive="active" *ngIf="_auth.loggedIn()">Halls</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white" style="font-size: large;" routerLink="/AddHall" routerLinkActive="active">Add Hall</a>
+          <a class="nav-link text-white" style="font-size: large;" routerLink="/AddHall" routerLinkActive="active" *ngIf="_auth.loggedIn()">Add Hall</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white"  style="font-size: large;" routerLinkActive="active" *ngIf="_auth.loggedIn()" (click)="logoutUser()" >Logout</a>
         </li>
       </ul>
     </div>
